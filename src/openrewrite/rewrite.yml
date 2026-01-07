@@ -1,0 +1,7 @@
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: org.example.jacksonbug.rewrite.RecipeBook
+recipeList:
+  - org.openrewrite.java.migrate.UpgradeToJava21
+  - org.openrewrite.java.migrate.guava.NoGuavaJava21
+  - org.openrewrite.java.jackson.UpgradeJackson_2_3
