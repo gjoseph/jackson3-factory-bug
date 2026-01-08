@@ -22,6 +22,8 @@ public class JacksonSetup {
                 // does it get replaced by one of these in Jackson 3?
                 // .constructorDetector(ConstructorDetector.USE_PROPERTIES_BASED)
 
+                .enable(MapperFeature.ALLOW_FINAL_FIELDS_AS_MUTATORS)
+
                 .addModule(m)
                 .build();
     }
